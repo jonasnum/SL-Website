@@ -1,0 +1,100 @@
+/* Maroon and off-white theme */
+:root {
+  --base-bg: #fffdf8;
+  --content-bg: #f6ece3;
+  --text: #402020;
+  --accent: #800000;
+  --accent-light: #a53232;
+  --border: #5c1a1a;
+  --button-bg: #800000;
+  --button-hover: #a03232;
+  --button-color: #fffdf8;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--base-bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: var(--content-bg);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+.button-container,
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button,
+.button-list a,
+.nav-button {
+  font-size: 1.2rem;
+  padding: 18px 38px;
+  min-width: 200px;
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+}
+
+button:hover,
+.button-list a:hover,
+.nav-button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-1px);
+  border-color: #400000;
+}
+
+button:focus,
+.button-list a:focus,
+.nav-button:focus {
+  outline: 3px solid #ffebe3;
+  outline-offset: 3px;
+}
+
+img.hero-image {
+  max-width: 100%;
+  width: 100%;
+  border: 3px solid var(--border);
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: var(--shadow);
+}
+
+a {
+  color: var(--accent);
+}
